@@ -25,8 +25,8 @@ public class MainApp {
       users.forEach(System.out::println);
 
       Car car = new Car("Lada", 2108);
-      List<User> user = userService.getUsersOnCar(car.getModel(), car.getSeries());
-      user.forEach(System.out::println);
+      User user = userService.getUsersOnCar(car.getModel(), car.getSeries());
+      System.out.println(user);
       context.close();
    }
 }
